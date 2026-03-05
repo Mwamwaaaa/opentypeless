@@ -619,7 +619,7 @@ impl PipelineHandle {
             self.set_state(PipelineState::Polishing);
             let llm_start = std::time::Instant::now();
 
-            let on_chunk: llm::ChunkCallback = if is_keyboard {
+            let on_chunk: llm::ChunkCallback = if is_keyboard_streaming {
                 match enigo_result.expect("enigo_result should be Some when is_keyboard is true") {
                     Ok(enigo_instance) => {
                         let enigo = Arc::new(Mutex::new(enigo_instance));
