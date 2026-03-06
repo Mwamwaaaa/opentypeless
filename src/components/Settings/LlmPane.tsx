@@ -66,9 +66,11 @@ export function LlmPane() {
         config.llm_base_url,
         config.llm_model,
       )
+      console.log('[LLM Test] Received latency:', ms, 'type:', typeof ms)
       setLlmLatencyMs(ms)
       setLlmTestStatus('success')
-    } catch {
+    } catch (err) {
+      console.error('[LLM Test] Error:', err)
       setLlmTestStatus('error')
     }
   }

@@ -23,9 +23,11 @@ export function SttPane() {
     setSttLatencyMs(null)
     try {
       const ms = await benchSttConnection(config.stt_api_key, config.stt_provider)
+      console.log('[STT Test] Received latency:', ms, 'type:', typeof ms)
       setSttLatencyMs(ms)
       setSttTestStatus('success')
-    } catch {
+    } catch (err) {
+      console.error('[STT Test] Error:', err)
       setSttTestStatus('error')
     }
   }
